@@ -103,9 +103,9 @@ FROM visitor;
 you find more queries [here](/queries.sql)
 
 ## Conclusion 
-```
+
 this project is a superficial database of a hygine center. As in my own experience in volunteering in a hygine Centers, hygine Centers have stricter rules when it comes to articles giveaway or services. For example max of service use, or numbers of articles to take in one day for each visitor.  
-```
+
 Next step in this project is to implement constrains in articles giveaway and max in service use...
 
 ---
