@@ -1,33 +1,33 @@
-# Hygine Center Project
- this project implements a relational database for managing a hygine Center. 
- Focus on database design and SQL queries.
+# Hygiene Center Project
+ A relational database with focus on database design and SQL queries. Data is fictitious.
+## Introdruction 
 
-data is fictitious.
-## Intodruction 
+This project models a hygine center that support people in need by providing services and articles. 
 
-This Database is designed to manage and follow the activies around the hygine center. The relational database provide an easy reporting and an efficient management role.
+With this system the hygiene center can manage their resources, understand patterns and improve their services.
+## Database Structure
 
 entities included like: 
-- visitors : people who use the services of the hygine center 
+- visitors : people who use the services of the hygiene center 
 - articles & articles giveaway
 - services & service use
 - volunteers & workplan
 
 for a closer look, see [creation.sql](/create.sql)
 
-with this system the hygine Center can manage ther resources, understand patterns and improve their services.
 
 
 
 
 
 
-## Queries 
+
+## Example Queries 
 
 
 1. **Total visitors**
 
-How many visitors have already visit the hygine Center? 
+How many visitors have already visit the hygiene Center? 
 
 ```sql
 SELECT COUNT(*) AS total_visitors FROM visitor;
@@ -37,7 +37,7 @@ SELECT COUNT(*) AS total_visitors FROM visitor;
 
 **importance?** 
 - do we have enough volunteers? 
-- is the hygine Center a sucessful idea? 
+- is the hygiene Center a successful idea? 
 
 ---
 
@@ -66,9 +66,10 @@ GROUP BY a.article_id, a.name;
 ```
 
 **importance?** 
-- does the hygine center need to find more donors? 
+- does the hygiene center need to find more donors? 
 - which article is the most popular? 
 - which article have to be refill sooner then others? 
+
 
 
 4. **average of volunteers working per day** 
@@ -86,16 +87,16 @@ GROUP BY date) sub;
 - more focus on finding new volunteers?
 - overloaded? 
 
-5. **max, min, average age of visitors**
+5. **max, min, average birthyear of visitors**
 
-what age is the youngest, oldest and average visitor?
+which year was the youngest, oldest and average visitor born?
 ```sql
 SELECT MIN(birth_year), MAX(birth_year), AVG(birth_year)
 FROM visitor;
 ```
 
 **importance?** 
-- adjust diffrent offers to diffrent age groups?
+- adjust different offers to different age groups?
 
 
 
@@ -104,8 +105,14 @@ you find more queries [here](/queries.sql)
 
 ## Conclusion 
 
-this project is a superficial database of a hygine center. As in my own experience in volunteering in a hygine Centers, hygine Centers have stricter rules when it comes to articles giveaway or services. For example max of service use, or numbers of articles to take in one day for each visitor.  
+This project implements a relational database for a hygiene center, focusing on efficient data organization and data analysis. The system includes the management of visitors, volunteers, services and articles and provides a foundation for operations. 
 
-Next step in this project is to implement constrains in articles giveaway and max in service use...
+The SQL queries provide insights such as service usage patterns, resources and volunteers workload, which supports decision-making and improving overall efficiency of the hygiene center. 
+
+This database provides a solid foundation, but can be enhanced by adding more realistic constraints and rules, as limiting the number of services for each visitor and restricting the quantity of articles given. 
+
+Future improvements may also include advanced queries. 
+
+Overall, this project shows how database systems can be used to support and optimize real-life services. 
 
 ---
