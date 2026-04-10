@@ -1,8 +1,8 @@
 # Hygiene Center Project
  A relational database with focus on database design and SQL queries. Data is fictitious.
-## Introdruction 
+## Introduction 
 
-This project models a hygine center that support people in need by providing services and articles. 
+This project models a hygiene center that support people in need by providing services and articles. 
 
 With this system the hygiene center can manage their resources, understand patterns and improve their services.
 ## Database Structure
